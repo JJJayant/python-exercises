@@ -27,18 +27,3 @@ except IndexError:
     print("IndexError: list index out of range") #Multiple except blocks can be used to handle different types of exceptions separately, allowing for more specific error handling and messaging. In this case, we are catching both ValueError and IndexError, which are common exceptions that can occur when working with user input and list indexing, respectively. By providing specific error messages for each type of exception, we can help the user understand what went wrong and how to fix it. 
 
 
-def func1():
-    try:
-        l = [1, 5, 6, 7]
-        i = int(input("Enter the index: "))
-        print(l[i])
-        return 1
-    except IndexError:
-        print("Index out of bounds!")
-        return 0
-    finally:
-        print("I am always executed")
-    # print("I am always executed")
-
-x = func1()
-print(x)
