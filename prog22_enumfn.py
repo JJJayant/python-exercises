@@ -13,14 +13,12 @@ for index, mark in enumerate(marks):
         print("index is 3")
     index = index + 1   
 print("\n")
-
 for index, mark in enumerate(marks,
-start=1):   # The start parameter in the enumerate function allows you to specify the starting index for the enumeration. By default, it starts at 0, but you can set it to any integer value. In this case, we set it to 1, so the index will start from 1 instead of 0. This can be useful when you want to display the index in a more human-readable format or when you want to align it with a specific numbering system.
+start=1):
     print(mark)
     if(index == 3):
         print("Harry, awesome!" )
-print("\n")
-
+        print("\n")
 # The enumerate function is a built-in function in Python that allows
 # you to loop over a sequence (such as a list, tuple, or string) and get
 # the index and value of each element in the sequence at the same

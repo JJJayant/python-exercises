@@ -5,5 +5,3 @@ import pandas
 import hashlib
 print("Hello World \n \"from\" Python")
 print(" My name", 9, 'r',sep='4', end="ends")
-
-

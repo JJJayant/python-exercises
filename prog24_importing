@@ -1,0 +1,21 @@
+import math as mt #creates an alias for the math module, allowing us to use 'mt' instead of 'math' when calling functions from the module. This can make our code shorter and more convenient to read.
+print(mt.cos(90))
+print(mt.cos(mt.radians(45))) 
+print(mt.floor(3.7)) 
+
+from math import sqrt, pi # This imports only the sqrt and pi functions from the math module, allowing us to use them directly without the need for the 'math.' prefix. This can make our code cleaner and more concise when we only need specific functions from a module.
+print(sqrt(16))
+print(pi)
+print("\n")
+
+from math import sqrt as s
+print( s(9) * pi)
+
+from math import * # This imports all functions and variables from the math module, allowing us to use them directly without any prefix. However, it is generally not recommended to use this approach as it can lead to naming conflicts and make it harder to identify where specific functions or variables are coming from in larger codebases.
+print(cos(radians(45)))
+
+print(dir(mt)) # The dir() function is a built-in function in Python that returns a list of the attributes and methods of an object. When you pass a module (like math) to dir(), it will return a list of all the functions, variables, and classes defined in that module. This can be useful for exploring the contents of a module and understanding what functionality it provides. In this case, it will show you all the functions and constants available in the math module.
+print(mt.nan, type(mt.nan))
+
+from prog9_functionsuse import geometric_mean 
+print(geometric_mean(4, 9)) # This calls the geometric_mean function with the arguments 4 and 9, which will calculate and print the geometric mean of these two numbers. The geometric mean is calculated as the square root of the product of the two numbers, so in this case it will be sqrt(4*9) = sqrt(36) = 6.0.

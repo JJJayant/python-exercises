@@ -18,15 +18,6 @@
 # deactivate
 
 #You can see the version of python and the installed packages in the virtual environment using the following commands:
-#1) python --version
-#2) Or you can use pip to list the installed packages:pip show pandas
-#3) Or you can type: 
-# python
-# import pandas as pd
-# pd.__version__
-
-# pip freeze gives all the packages and their versions in the virtual environment. You can use this output to create a requirements.txt file, which can be used to recreate the same environment on another machine or share it with others. To create a requirements.txt file, you can run the following command:
-# pip freeze > requirements.txt
-# pip install -r requirements.txt: This command will install all the packages and their specific versions listed in the requirements.txt file,
-#                                  allowing you to recreate the same environment on another machine or share it with others. This is particularly useful for collaborative projects or when deploying applications to production environments, 
-#                                  as it ensures that all dependencies are consistent across different setups.
+# python --version
+# Or you can use pip to list the installed packages:
+# pip list
